@@ -1,0 +1,21 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}" />
+
+<form action="" method="POST">
+    {% csrf_token %}
+    <div>
+        <div class="related-widget-wrapper">
+        <label class="required">Question:</label>
+    <select name="quest_choice">
+        <option value="" selected="selected">---------</option>
+        {% for ques in question %}
+        <option value=""> {{ques}}</option>
+    {% endfor %}
+    </select>
+            <div/>
+            <div class="related-widget-wrapper">
+    {{ choice_form }}
+                <div class="related-widget-wrapper">
+<input type="submit" value="submit" />
+</form>
