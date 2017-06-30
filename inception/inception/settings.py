@@ -25,7 +25,7 @@ SECRET_KEY = 'rvmcs*fdgcmef=sbcu20cw3!qjd4)fn5_rvq-bs*!5@wm3&o0x'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['10.1.223.204','127.0.0.1']
 
 
 # Application definition
@@ -117,12 +117,18 @@ AUTH_PASSWORD_VALIDATORS = [
 
 ####################Email Configuration####################################################################
 
-EMAIL_HOST = 'smtp.mailgun.org'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'postmaster@sandbox76448f327eba49dcb3078377ba1ce993.mailgun.org'
-EMAIL_HOST_PASSWORD = '70774a79d9c756246a4b62d6590886ca'
 EMAIL_USE_TLS = True
-DEFAULT_FROM_EMAIL = 'Inception Team <roushan101@outlook.com>'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'inception.noreply@gmail.com'
+EMAIL_HOST_PASSWORD = 'Ready2go'
+EMAIL_PORT = 587
+
+# EMAIL_HOST = 'smtp.sendgrid.net'
+# EMAIL_PORT = 587
+# EMAIL_HOST_USER = 'apikey'
+# EMAIL_HOST_PASSWORD = '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'
+# EMAIL_USE_TLS = True
+# DEFAULT_FROM_EMAIL = 'Inception Team <roushan101@outlook.com>'
 
 ###########################################################################################################
 
