@@ -6,6 +6,7 @@ from django.contrib.sites.shortcuts import get_current_site
 from django.utils.encoding import force_bytes, force_text
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 from django.template.loader import render_to_string
+from django.shortcuts import render_to_response, render
 from .tokens import account_activation_token
 from django.views.decorators.csrf import csrf_exempt
 from polls.views import *
@@ -55,3 +56,7 @@ def activate(request, uidb64, token):
     else:
         return HttpResponse('Activation link is invalid!')
 
+
+def policy(request):
+    return render_to_response(
+        'policy.html')
