@@ -1,0 +1,101 @@
+body {
+    background-color: #FFF;
+    margin: 0;
+    padding: 0;
+    }
+
+#cover {
+  background: url("https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-8/htmlcss1-img_bicycles.jpeg");
+  background-size: cover;
+  background-attachment:fixed;
+  height: 900px;
+  position: fixed;
+  top: -55px;
+  width: 100%;
+}
+
+.main.background.lazy-loaded {
+    background: #333 url("/sc/h/64xk850n3a8uzse6fi11l3vmz") repeat scroll center top / cover ;
+    opacity: 1;
+}
+
+.navigation {
+    box-sizing: border-box;
+    background-color: #3587A4;
+    overflow: auto;
+    padding: 0px 40px;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    left: 0;
+    text-align: right;
+    width: 100%;
+    z-index: 10000;
+}
+#login{
+color: #14213D;
+}
+
+#signup{
+padding: 0px 80px;
+}
+
+.cover-content {
+  box-sizing: border-box;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  top: 280px;
+  width: 70%;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+      color: #14213D;
+      display: inline-block;
+      font-family: 'Abel', sans-serif;
+      font-size: 16px;
+      font-weight: 300;
+      margin: 16px 20px;
+      text-transform: uppercase;
+    }
+
+#layout-footer, #footer {
+    background: #3587A4;
+    border: medium none;
+    bottom: 0;
+    padding: 0px 40px;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+}
+
+#layout-footer {
+border-top: 1px solid #ccc;
+color: #66696a;
+font-size: 12px;
+font-weight: normal;
+line-height: 14px;
+padding-bottom: 10px;
+}
+
+
+.os-linux .layout-header-or-footer, .os-linux .layout-header-or-footer button, .os-linux .layout-header-or-footer input {
+    font-family: Helvetica,FreeSans,"Liberation Sans",Helmet,Arial,sans-serif;
+
+.layout-header-or-footer, .layout-header-or-footer button, .layout-header-or-footer input {
+    font-family: sans-serif;
+}
+.layout-header-or-footer {
+    color: #3587A4;
+    font-size: 1300px;
+    font-weight: normal;
+    line-height: 17px;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+    display: block;
+}

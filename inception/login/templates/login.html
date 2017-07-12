@@ -1,8 +1,65 @@
-{% block content %}
-<h2>Login</h2>
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Login</button>
-</form>
-{% endblock %}
+<!DOCTYPE html>
+{% load static %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+      <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+      <head>
+    <body class="homepage">
+        <ul class="navigation">
+            <li class="navigation">
+                <form method="post">
+                    {% csrf_token %}
+                    {{ form }}
+                    <button type="submit">Login</button>
+                </form>
+            </li>
+            <div id ="signup">
+            Not a member?
+            <a href="/inception/signup/" target="_blank">Join now</a>
+            </div>
+        </ul>
+
+      <div id="cover">
+        <div class="cover-content">
+        </div>
+      </div>
+        <footer id="layout-footer" class="layout-header-or-footer" role="contentinfo">
+            <div class="wrapper">
+                <p class="copyright guest">
+                <span>Inception Corporation</span>
+                <em>© 2017</em>
+                </p>
+                <ul class="nav-legal" role="navigation" aria-label="Footer Legal Menu">
+                    <li role="menuitem">
+                        <a href="/inception/privacy_policy/" target="_blank" rel="nofollow">Privacy Policy</a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="/inception/signup/" target="_blank" rel="nofollow">Unsubscribe</a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="/inception/signup/" target="_blank" rel="nofollow">Subscribe</a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="/inception/signup/" target="_blank" rel="nofollow">Contact Us</a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="/inception/signup/" target="_blank" rel="nofollow">About Us</a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="/inception/signup/" target="_blank" rel="nofollow">Who we are</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+    </body>
+</html>
+
+
+
+
+

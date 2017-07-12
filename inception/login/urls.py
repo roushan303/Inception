@@ -6,6 +6,7 @@ app_name = 'login'
 
 urlpatterns = [
     url(r'^signup/$', views.signup, name = 'signup'),
+    url(r'^privacy_policy/$', views.policy, name = 'policy'),
     url(r'^login/$', auth_views.login, {'template_name': 'login.html'}, name='login'),
     url(r'^logout/$', auth_views.logout, {'template_name': 'logout.html'}, name='logout'),
     url(r'^', include('django.contrib.auth.urls')),
